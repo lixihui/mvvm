@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <p>
+            <input type="text" v-model = "value">
+        </p>
+        {{value}}
+        <p>{{user.name}}</p>
+        <p>
+            {{}}
+            <p>111</p>
+        </p>
+    </div>
+
+    <script src="./index.js"></script>
+    <script>
+        new Mvvm({
+            el:'#root',
+            data:{
+                value: '默认',
+                user:{
+                    name:'名字'
+                }
+            }
+        })
+    </script>
+</body>
+</html>
